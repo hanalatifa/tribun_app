@@ -54,7 +54,7 @@ class NewsController extends GetxController {
     await fetchTopHeadLines();
   }
 
-  void selectedCategorys(String category) {
+  void selectCategory(String category) {
     if (_selectedCategory.value != category) {
       _selectedCategory.value = category;
       fetchTopHeadLines(category: category);
